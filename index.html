@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa z przyciskami</title>
+    <style>
+        /* Stylizacja przycisków */
+        .map-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa</h1>
+    <div id="map-container">
+        <!-- Przycisk "Okrąg" -->
+        <button class="map-button" onclick="redirectToCircle()">Okrąg</button>
+        <!-- Przycisk "Prostokąt" -->
+        <button class="map-button" onclick="redirectToRectangle()">Prostokąt</button>
+    </div>
+
+    <script>
+        // Funkcje przekierowujące do odpowiednich podstron
+        function redirectToCircle() {
+            window.location.href = "podstrona_okrag.html"; // Zmień na właściwy adres URL
+        }
+
+        function redirectToRectangle() {
+            window.location.href = "podstrona_prostokat.html"; // Zmień na właściwy adres URL
+        }
+    </script>
+</body>
+</html>
