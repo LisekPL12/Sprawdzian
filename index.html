@@ -6,36 +6,51 @@
     <title>Sprawdzian Zabrocki</title>
     <style>
        
-        .map-button {
+        .frame {
+            border: 2px solid #808080; 
+            padding: 20px;
             display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            background-color: #3498db;
-            color: #ffffff;
+        }
+
+        
+        .circle-button {
+            width: 100px;
+            height: 100px;
+            background-color: #0000FF; 
+            border-radius: 50%; 
             border: none;
-            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .rectangle-button {
+            width: 120px;
+            height: 60px;
+            background-color: #FF0000; 
+            border: none;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Mapa</h1>
-    <div id="map-container">
-   
-        <button class="map-button" onclick="redirectToCircle()">Okrąg</button>
+
+<h3> Bartosz Zabrocki </h3>
+       <h3> 2F </h3>    
+    <div class="frame">
       
-        <button class="map-button" onclick="redirectToRectangle()">Prostokąt</button>
+        <button class="circle-button" onclick="redirectToCircle()">Okrąg</button>
+       
+        <button class="rectangle-button" onclick="redirectToRectangle()">Prostokąt</button>
     </div>
 
     <script>
-      
+       
         function redirectToCircle() {
-            window.location.href = "okrag_Zabrocki.html";
+            window.location.href = "Zabrocki_okrag.html";
         }
 
         function redirectToRectangle() {
-            window.location.href = "prostokat_Zabrocki.html";
+            window.location.href = "Zabrocki_prostokat.html"; 
         }
     </script>
 </body>
